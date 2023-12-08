@@ -1,0 +1,19 @@
+So I run docker login: 
+After login I see my username 'oigwemoh' in the username field
+--- omitted for brevity ---
+Total Memory: 7.744GiB
+ Name: codespaces-ad0016
+ ID: <redacted_id>
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Username: oigwemoh
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/6
+ Live Restore Enabled: false
+
+rad bicep publish --file recipe.bicep --target br:docker.io/oigwemoh/recipes/myrecipe:1.1.0
+
+Output: 
+Building recipe.bicep...
+Failed to publish Bicep file "recipe.bicep" to "docker.io/oigwemoh/recipes/myrecipe:1.1.0". Cause: HEAD "https://index.docker.io/v2/oigwemoh/recipes/myrecipe/manifests/<redacted_checksum>": response status code 401: Unauthorized.
