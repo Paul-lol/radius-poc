@@ -12,8 +12,8 @@ Total Memory: 7.744GiB
   127.0.0.0/6
  Live Restore Enabled: false
 
-rad bicep publish --file recipe.bicep --target br:docker.io/oigwemoh/recipes/myrecipe:1.1.0
+rad bicep publish --file recipe.bicep --target br:docker.io/oigwemoh/radrepo:1.0
 
 Output: 
 Building recipe.bicep...
-Failed to publish Bicep file "recipe.bicep" to "docker.io/oigwemoh/recipes/myrecipe:1.1.0". Cause: HEAD "https://index.docker.io/v2/oigwemoh/recipes/myrecipe/manifests/<redacted_checksum>": response status code 401: Unauthorized.
+Failed to publish Bicep file "recipe.bicep" to "docker.io/oigwemoh/radrepo:1.0". Cause: POST "https://index.docker.io/v2/oigwemoh/radrepo/blobs/uploads/": response status code 401: unauthorized: authentication required: [map[Action:pull Class: Name:oigwemoh/radrepo Type:repository] map[Action:push Class: Name:oigwemoh/radrepo Type:repository]].
