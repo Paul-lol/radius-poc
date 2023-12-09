@@ -17,3 +17,9 @@ rad bicep publish --file recipe.bicep --target br:docker.io/oigwemoh/radrepo:1.0
 Output: 
 Building recipe.bicep...
 Failed to publish Bicep file "recipe.bicep" to "docker.io/oigwemoh/radrepo:1.0". Cause: POST "https://index.docker.io/v2/oigwemoh/radrepo/blobs/uploads/": response status code 401: unauthorized: authentication required: [map[Action:pull Class: Name:oigwemoh/radrepo Type:repository] map[Action:push Class: Name:oigwemoh/radrepo Type:repository]].
+
+
+rad bicep publish --file recipe.bicep --plain-http --target br:localhost:34613/kubernetes-recipe:latest
+Error: unknown flag: --plain-http
+
+TraceId:  014ea72105d5f446e3ac67b2472c4a9e
